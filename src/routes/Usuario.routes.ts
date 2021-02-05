@@ -4,8 +4,6 @@ import Usuario from '../models/usuario';
 import UsuarioRepository from '../repositories/UsuarioRepository';
 
 
-
-
 const usuarioRouter = Router();
 
 const usuarioRepository = new UsuarioRepository();
@@ -26,9 +24,5 @@ usuarioRouter.get('/', (request, response)=>{
 usuarioRouter.post('/', (request, response) =>{
  
 })
-
-
-
-
 
 export default usuarioRouter;
