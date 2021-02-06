@@ -2,8 +2,12 @@ import UsuarioRepository from '../repositories/UsuarioRepository';
 import {getCustomRepository} from 'typeorm';
 import Usuario from '../models/usuario';
 
+interface RequestStatus{
+    StatusUsuario: string;
+}
+
 interface Request {
-    id: number;
+    id: string;
     email: string;
     nome: string;
     senha: string;
@@ -37,6 +41,11 @@ class CreateUserService{
 
         return usuario;
     }
+
 }
+
+
+
+
 
 export default CreateUserService;
