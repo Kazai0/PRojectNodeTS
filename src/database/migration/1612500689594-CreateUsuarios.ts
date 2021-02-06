@@ -38,6 +38,12 @@ export default class CreateUsuarios1612500689594 implements MigrationInterface {
                         isNullable: false,
 
                     },
+                    {
+                        name: 'statusUsuario',
+                        type: 'varchar',
+                        
+
+                    },
                 ],
             })
         

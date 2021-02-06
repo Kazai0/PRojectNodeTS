@@ -1,5 +1,5 @@
 import {Request, Response, Router} from 'express';
-import createUser from '../Services/CriandoUser';
+import createUser from '../Services/CreateUser';
 
 
 

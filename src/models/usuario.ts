@@ -1,9 +1,9 @@
-import  {Entity, Column, PrimaryColumn} from 'typeorm';
+import  {Entity, Column, PrimaryGeneratedColumn, PrimaryColumn} from 'typeorm';
 
 @Entity('usuarios')
 class Usuario{
     
-    @PrimaryColumn()
+    @PrimaryGeneratedColumn()
     id: string;
 
     @Column()
@@ -15,6 +15,8 @@ class Usuario{
     @Column()
     senha: string;
 
+    @Column()
+    statusUsuario: string;
     
 }
 
