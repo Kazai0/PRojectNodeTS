@@ -36,7 +36,7 @@ usuarioRouter.put('/user/:id', async (request, response)=>{
     const usuarios  = await usuarioRepository.findOne(request.params.id);
 
     try{
-    const {id, email, nome, senha, statusUsuario} = request.body;
+    const {id,email, nome, senha, statusUsuario} = request.body;
 
     const createUser = new CreateUserService();
 

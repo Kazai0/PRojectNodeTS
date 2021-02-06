@@ -4,7 +4,7 @@ import  {Entity, Column, PrimaryGeneratedColumn, PrimaryColumn} from 'typeorm';
 class Usuario{
     
     @PrimaryGeneratedColumn()
-    id: string;
+    id: number;
 
     @Column()
     email: string;

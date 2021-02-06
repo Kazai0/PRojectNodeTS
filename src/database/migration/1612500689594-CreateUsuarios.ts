@@ -9,8 +9,10 @@ export default class CreateUsuarios1612500689594 implements MigrationInterface {
                 columns :[
                     {
                         name: 'id',
-                        type: 'varchar',
+                        type: 'int',
                         isPrimary: true,
+                        isGenerated: true,
+                        generationStrategy: 'increment',
                         
 
                     },

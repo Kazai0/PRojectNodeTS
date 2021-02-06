@@ -3,8 +3,7 @@ import {getCustomRepository} from 'typeorm';
 import Usuario from '../models/usuario';
 
 interface Request {
-    id: string;
-
+    id: number;
     email: string;
     nome: string;
     senha: string;
@@ -13,7 +12,7 @@ interface Request {
 }
 
 class CreateUserService{
-    public async execute({id,email,nome,senha,statusUsuario}: Request):Promise<Usuario>{
+    public async execute({id, email,nome,senha,statusUsuario}: Request):Promise<Usuario>{
         const usuarioRepository = getCustomRepository(UsuarioRepository);
         
         const checkUserExist = await usuarioRepository.findOne({
