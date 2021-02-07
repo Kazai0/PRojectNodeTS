@@ -11,8 +11,6 @@ export default class CreateUsuarios1612500689594 implements MigrationInterface {
                         name: 'id',
                         type: 'varchar',
                         isPrimary: true,
-                       
-                        
 
                     },
                     {
@@ -45,6 +43,20 @@ export default class CreateUsuarios1612500689594 implements MigrationInterface {
                         
 
                     },
+                    {          
+                        name: 'created_at',
+                        type: 'timestamp',
+                        default: 'now()',
+
+                    },
+                    {
+                        name: 'update_at',
+                        type: 'timestamp',
+                        default: 'now()',
+
+                    },
+
+
                 ],
             })
         

@@ -1,4 +1,4 @@
-import  {Entity, Column, PrimaryGeneratedColumn, PrimaryColumn} from 'typeorm';
+import  {Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn} from 'typeorm';
 
 import {uuid} from 'uuidv4';
 
@@ -19,6 +19,12 @@ class Usuario{
 
     @Column()
     statusUsuario: string;
+
+    @CreateDateColumn()
+    created_at: Date;
+
+    @UpdateDateColumn()
+    update_at: Date;
     
 }
 
